@@ -1,7 +1,7 @@
 /* home.scss */
 
 $primary-color: #001219;
-$secondary-color: #f8f9fa;
+$secondary-color: #70e000;
 $background-color: #f8f9fa;
 $text-color: #001219;
 $bord-radius: 1rem;
@@ -14,13 +14,24 @@ body {
   color: $text-color;
 }
 
+.green {
+    color: $secondary-color;
+}
+
+.u_green {
+    // text-decoration: underline #70e000;
+    border: 1px solid $secondary-color;
+    border-radius: $bord-radius;
+    padding-inline: 12px;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem;
   background: $primary-color;
-  color: $secondary-color;
+  color: $background-color;
 
   &__text {
     max-width: 50%;
@@ -28,6 +39,17 @@ body {
     h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
+      position: relative;
+
+      &::after {
+            position: absolute;
+            content: "";
+            top: 0.89em;
+            width: 10px;
+            height: 10px;
+            border-radius: $bord-radius;
+            background-color: $secondary-color;
+      }
     }
 
     h2 {
@@ -40,7 +62,7 @@ body {
     }
 
     .hero__buttons button {
-      background: $secondary-color;
+      background: $background-color;
       color: $primary-color;
       padding: 0.75rem 1.5rem;
       margin-right: 1rem;
@@ -77,9 +99,9 @@ body {
     gap: 1rem;
 
     li {
-      background: white;
+      background: $secondary-color;
       padding: 0.75rem 1rem;
-      border: 1px solid #ddd;
+      border: 1px solid $primary-color;
       border-radius: $btn-bd-rad;
     }
   }

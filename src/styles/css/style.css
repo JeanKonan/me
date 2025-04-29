@@ -6,6 +6,16 @@ body {
   color: #001219;
 }
 
+.green {
+  color: #70e000;
+}
+
+.u_green {
+  border: 1px solid #70e000;
+  border-radius: 1rem;
+  padding-inline: 12px;
+}
+
 .hero {
   display: flex;
   justify-content: space-between;
@@ -20,6 +30,16 @@ body {
 .hero__text h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  position: relative;
+}
+.hero__text h1::after {
+  position: absolute;
+  content: "";
+  top: 0.89em;
+  width: 10px;
+  height: 10px;
+  border-radius: 1rem;
+  background-color: #70e000;
 }
 .hero__text h2 {
   font-size: 1.5rem;
@@ -39,7 +59,7 @@ body {
   transition: background 0.3s ease;
 }
 .hero__text .hero__buttons button:hover {
-  background: rgb(218.25, 223.5, 228.75);
+  background: rgb(86.5, 173, 0);
 }
 .hero__image img {
   max-width: 300px;
@@ -60,9 +80,9 @@ body {
   gap: 1rem;
 }
 .skills ul li {
-  background: white;
+  background: #70e000;
   padding: 0.75rem 1rem;
-  border: 1px solid #ddd;
+  border: 1px solid #001219;
   border-radius: 2rem;
 }
 
@@ -112,7 +132,7 @@ body {
 
 .cta {
   text-align: center;
-  background: #f8f9fa;
+  background: #70e000;
   padding: 2rem 3rem;
   color: #001219;
 }
@@ -122,14 +142,14 @@ body {
 .cta button {
   margin: 0.5rem;
   background: #001219;
-  color: #f8f9fa;
+  color: #70e000;
   border: none;
   padding: 0.75rem 1.5rem;
   cursor: pointer;
   border-radius: 2rem;
 }
 .cta button:hover {
-  background: rgb(224.2, 228.6, 233);
+  background: rgb(91.6, 183.2, 0);
   color: #001219;
 }
 

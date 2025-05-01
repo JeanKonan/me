@@ -1,73 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | [Your Name]</title>
-  <link rel="stylesheet" href="../styles/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Jean KONAN</title>
+    <link rel="stylesheet" href="../styles/css/style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero__text">
-      <h1>Hi, I'm Jean KONAN</h1>
-      <h2><span class="green">Aspiring Software Engineer & Web Developer</span></h2>
-      <p>I build thoughtful, user-centered websites and applications. Currently studying Computer Science with a minor in Web development and a focus in Machine Learning.</p>
-      <div class="hero__buttons">
-        <button onclick="scrollToSection('projects')">View My Projects</button>
-        <button onclick="scrollToSection('contact')">Contact Me</button>
-      </div>
-    </div>
-    <div class="hero__image">
-      <img src="profile.svg" alt="Illustration or photo of me" />
-    </div>
-  </header>
+    <header>
+        <div class="logo">
+            <img src="../images/jk.svg" alt="Jean Konan">
+        </div>
 
-  <section class="skills">
-    <h3>Tech Stack</h3>
-    <ul>
-      <li>Python</li>
-      <li>HTML/CSS/JS</li>
-      <li>C#</li>
-      <li>Kotlin</li>
-      <li>SASS</li>
-      <li>Git/GitHub</li>
-    </ul>
-  </section>
+    </header>
 
-  <section class="projects" id="projects">
-    <h3>Featured Projects</h3>
-    <div class="projects__grid">
-      <div class="project">
-        <h4>Project 1 Title</h4>
-        <p>Short description of what the project does and the tech stack used.</p>
-        <button>View More</button>
-      </div>
-      <div class="project">
-        <h4>Project 2 Title</h4>
-        <p>Short description of what the project does and the tech stack used.</p>
-        <button>View More</button>
-      </div>
-      <div class="project">
-        <h4>Project 3 Title</h4>
-        <p>Short description of what the project does and the tech stack used.</p>
-        <button>View More</button>
-      </div>
-      <!-- Repeat for other projects -->
-    </div>
-  </section>
+    <main>
+        <div class="bg_img">
+                <img id= "bg_img" src="../images/africa_tribal.jpg" alt="Africa">
+            </div>
+        <section class="hero">
+            
+            <div class="hero__text">
+                <h1>Hi, I'm Jean KONAN</h1>
+                <h2><span class="green">Aspiring Software Engineer & Web Developer</span></h2>
+                <p>I build thoughtful, user-centered websites and applications. Currently studying Computer Science with a minor in Web development and a focus in Machine Learning.</p>
+                
+                <div class="hero__buttons">
+                    <button onclick="scrollToSection('projects')">View My Projects</button>
+                    <button onclick="scrollToSection('contact')">Contact Me</button>
+                </div>
+            </div>
+            <div class="hero__image">
+                <img src="profile.svg" alt="Illustration or photo of me" />
+            </div>
 
-  <section class="about">
-    <h3>About Me</h3>
-    <p>Currently a CS major at [University Name], I’ve been diving into both software engineering and web development. I enjoy turning complex problems into clean, scalable code.</p>
-    <button onclick="window.location.href='about.html'">Read More</button>
-  </section>
+        </section>
 
-  <footer class="cta" id="contact">
-    <h3>Interested in working together or want to connect?</h3>
-    <button onclick="window.location.href='contact.html'">Let's Talk</button>
-    <button onclick="window.location.href='resume.pdf'">Download Resume</button>
-  </footer>
+        <section class="skills">
+            <h3>Tech Stack</h3>
+            <ul>
+                <li>Python</li>
+                <li>HTML/CSS/JS</li>
+                <li>C#</li>
+                <li>Kotlin</li>
+                <li>SASS</li>
+                <li>Git/GitHub</li>
+            </ul>
+        </section>
 
-  <script src="../scripts/home.js"></script>
+        <section class="projects" id="projects">
+            <h3>Featured Projects</h3>
+            <div class="projects__grid">
+                <div class="project">
+                    <h4>Project 1 Title</h4>
+                    <p>Short description of what the project does and the tech stack used.</p>
+                    <button>View More</button>
+                </div>
+
+                <div class="project">
+                    <h4>Project 2 Title</h4>
+                    <p>Short description of what the project does and the tech stack used.</p>
+                    <button>View More</button>
+                </div>
+
+                <div class="project">
+                    <h4>Project 3 Title</h4>
+                    <p>Short description of what the project does and the tech stack used.</p>
+                    <button>View More</button>
+                </div>
+                <!-- Repeat for other projects -->
+            </div>
+        </section>
+
+        <section class="about">
+            <h3>About Me</h3>
+            <p>Currently a CS major at [University Name], I’ve been diving into both software engineering and web development. I enjoy turning complex problems into clean, scalable code.</p>
+            <button onclick="window.location.href='about.html'">Read More</button>
+        </section>
+
+    </main>
+
+    <footer class="cta" id="contact">
+        <h3>Interested in working together or want to connect?</h3>
+        <button onclick="window.location.href='contact.html'">Let's Talk</button>
+        <button onclick="window.location.href='resume.pdf'">Download Resume</button>
+    </footer>
+
+    <script src="../scripts/home.js"></script>
 </body>
 </html>
